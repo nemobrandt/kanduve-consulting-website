@@ -170,7 +170,7 @@ p {
   z-index: 5;
   transition: all .4s ease-in-out;
   border: none;
-  background: #4E6EF1;
+  background: #3a6278;
   overflow: hidden;
 }
 
@@ -317,7 +317,7 @@ p {
   height: 100%;
   border-style: solid;
   /* Spinner Color */
-  border-color: #4E6EF1 #4E6EF1 #ddd;
+  border-color: #3a6278 #3a6278 #ddd;
   border-radius: 50%;
   border-width: 6px;
 }
@@ -542,16 +542,16 @@ p {
   right: 0;
   left: auto;
   width: 0;
-  height: 2px;
-  background: #4E6EF1;
+  height: 3px;
+  background: #668b9b;
   z-index: -1;
   opacity: 0;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   transition: all 0.3s ease-out 0s;
 }
 
 .navbar-nav .nav-item a:hover, .navbar-nav .nav-item a.active {
-  color: #4E6EF1;
+  color: #3a6278;
 }
 
 .navbar-nav .nav-item a:hover::before, .navbar-nav .nav-item a.active::before {
@@ -675,12 +675,14 @@ p {
 /* ============== hero-area ============ */
 .hero-section {
   position: relative;
-  z-index: 1;
   padding: 160px 0 120px;
-  background-image: url("../img/hero/hero-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: left bottom;
+
+  background:
+    linear-gradient(rgba(255,255,255,0.79), rgba(255,255,255,0.79)),
+    url("../img/hero/hero-bg.jpg");
+
   background-size: cover;
+  background-position: center;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -710,7 +712,7 @@ p {
 .hero-section .hero-content span {
   font-family: "Archivo Black", sans-serif;
   font-size: 30px;
-  color: #4E6EF1;
+  color: #3a6278;
   margin-bottom: 20px;
 }
 
