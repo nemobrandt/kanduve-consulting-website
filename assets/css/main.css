@@ -46,7 +46,7 @@ button:focus,
 }
 
 a:hover {
-  color: #4E6EF1;
+  color: white;
 }
 
 a {
@@ -231,7 +231,7 @@ p {
 
 .scroll-top:hover {
   color: #fff;
-  background: rgba(78, 110, 241, 0.8);
+  background: #3a6278
 }
 
 @keyframes animation1 {
@@ -409,6 +409,7 @@ p {
   width: 100%;
   z-index: 99;
   transition: all 0.3s ease-out 0s;
+  background-color: #ffff;
 }
 
 .navbar-logo {
@@ -628,7 +629,7 @@ p {
 
 .navbar-nav .nav-item .sub-menu li a.active, .navbar-nav .nav-item .sub-menu li a:hover {
   padding-left: 25px;
-  color: #4E6EF1;
+  color: #3a6278;
 }
 
 .navbar-nav .sub-nav-toggler {
@@ -675,17 +676,28 @@ p {
   top: -5px;
 }
 
+
 /* ============== hero-area ============ */
 .hero-section {
   position: relative;
-  padding: 160px 0 120px;
+  /* padding: 160px 0 120px; */
   border-bottom: 4px solid rgba(21, 53, 72, 0.08);
   background:
-    linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.72)),
-    url("../img/hero/hero-bg.jpg");
+  linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.72)),
+  url("../img/hero/hero-bg.jpg");
+
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 
   background-size: cover;
   background-position: center;
+}
+
+.hero-section .container {
+  padding-top: 160px;
+  padding-bottom: 120px;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -880,7 +892,7 @@ p {
 
 .service-section .single-service {
   background: rgb(255, 255, 255);
-  border-radius: 18px; /* optional, keep your own if you want */
+  border-radius: 5px; /* optional, keep your own if you want */
   padding: 50px 30px;
 
   box-shadow:
@@ -1069,7 +1081,7 @@ p {
 }
 
 .footer .widget-wrapper .footer-widget ul li a:hover {
-  color: #4E6EF1;
+  color: #3a6278;
   padding-left: 7px;
 }
 
