@@ -3,10 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Bliss || Digital Agency Bootstrap 5 Landing Page</title>
+    <title>Kanduve Consulting</title>
+
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.svg"/>
+	<link rel="icon" href="favicon.ico?v=1" sizes="any">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=1">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?v=1">
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=1">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- ========================= CSS here ========================= -->
@@ -16,7 +20,7 @@
     <link rel="stylesheet" href="assets/css/animate.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
   </head> 
-  <body>
+  <body>+
     <!--[if lte IE 9]>
       <p class="browserupgrade">
         You are using an <strong>outdated</strong> browser. Please
@@ -53,7 +57,7 @@
             <div class="col-lg-12">
               <nav class="navbar navbar-expand-lg">
                 <a class="navbar-brand" href="index.html">
-                  <img src="assets/img/logo/logo.svg" alt="Logo" />
+                  <img src="assets/img/logo/logo.svg" class="navbar-logo" alt="Logo"/>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="toggler-icon"></span>
@@ -109,48 +113,83 @@
               <h1 class="wow fadeInUp" data-wow-delay=".4s">
 								Technology and manufacturing consulting. 
 							</h1>
-							<a href="javascript:void(0)" class="main-btn btn-hover wow fadeInUp" data-wow-delay=".6s">Buy Now</a>
+							<a href="#service" class="main-btn btn-hover wow fadeInUp" data-wow-delay=".6s">Our Services</a>
             </div>
 					</div>
 					<div class="col-lg-6">
 						<div class="hero-img wow fadeInUp" data-wow-delay=".5s">
-							<img src="assets/img/hero/hero-img.svg" alt="">
+							<img src="assets/img/hero/hero-bg.jpeg" alt="">
 						</div>
 					</div>
         </div>
 			</div>
     </section>
-		<!-- ========================= hero-section end ========================= -->
-
-		<!-- ========================= client-logo-section start ========================= -->
-		<section class="client-logo-section pt-150">
+		<!-- ========================= service-section start ========================= -->
+		<section id="service" class="service-section img-bg pt-100 pb-100">
 			<div class="container">
-				<div class="row">
-					<div class="col-lg-3 col-sm-6">
-						<div class="single-logo text-center">
-							<img src="assets/img/client-logo/lineicons.svg" alt="">
-						</div>
-					</div>
-					<div class="col-lg-3 col-sm-6">
-						<div class="single-logo text-center">
-							<img src="assets/img/client-logo/uideck.svg" alt="">
-						</div>
-					</div>
-					<div class="col-lg-3 col-sm-6">
-						<div class="single-logo text-center">
-							<img src="assets/img/client-logo/pagebulb.svg" alt="">
-						</div>
-					</div>
-					<div class="col-lg-3 col-sm-6">
-						<div class="single-logo text-center">
-							<img src="assets/img/client-logo/graygrids.svg" alt="">
+				<div class="row justify-content-center">
+					<div class="col-xxl-5 col-xl-6 col-lg-7 col-md-10">
+						<div class="section-title text-center mb-50">
+							<h1>Our Services</h1>
+							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt labore.</p>
 						</div>
 					</div>
 				</div>
+
+				<div class="row g-4">
+					<div class="col-xl-3 col-md-6">
+						<div class="single-service">
+							<div class="icon color-1">
+								<i class="lni lni-layers"></i>
+							</div>
+							<div class="content">
+								<h3>Digital Transformation</h3>
+								<p>Culture, products, channels.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-md-6">
+						<div class="single-service">
+							<div class="icon color-2">
+								<i class="lni lni-code-alt"></i>
+							</div>
+							<div class="content">
+								<h3>Custom Software</h3>
+								<p>Enterprise applications, digital platforms, mobile apps.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-md-6">
+						<div class="single-service">
+							<div class="icon color-3">
+								<i class="lni lni-pallet"></i>
+							</div>
+							<div class="content">
+								<h3>Data & Analytics</h3>
+								<p>Business intelligence, data science, data engineering.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-md-6">
+						<div class="single-service">
+							<div class="icon color-4">
+								<i class="lni lni-vector"></i>
+							</div>
+							<div class="content">
+								<h3>Strategy & Advisory </h3>
+								<p>Lorem ipsum dolor sitsdw consetsad pscing eliewtr, diam nonumy.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="view-all-btn text-center pt-30">
+					<a href="javascript:void(0)" class="main-btn btn-hover">View All Services</a>
+				</div>
+
 			</div>
 		</section>
-		<!-- ========================= client-logo-section end ========================= -->
-
+		<!-- ========================= service-section end ========================= -->
 		<!-- ========================= about-section start ========================= -->
 		<section id="about" class="about-section pt-150">
 			<div class="container">
@@ -206,73 +245,6 @@
 			</div>
 		</section>
 		<!-- ========================= about-section end ========================= -->
-
-		<!-- ========================= service-section start ========================= -->
-		<section id="service" class="service-section img-bg pt-100 pb-100 mt-150">
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-xxl-5 col-xl-6 col-lg-7 col-md-10">
-						<div class="section-title text-center mb-50">
-							<h1>Our services</h1>
-							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt labore.</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-xl-3 col-md-6">
-						<div class="single-service">
-							<div class="icon color-1">
-								<i class="lni lni-layers"></i>
-							</div>
-							<div class="content">
-								<h3>UI/UX design</h3>
-								<p>Lorem ipsum dolor sitsdw consetsad pscing eliewtr, diam nonumy.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-3 col-md-6">
-						<div class="single-service">
-							<div class="icon color-2">
-								<i class="lni lni-code-alt"></i>
-							</div>
-							<div class="content">
-								<h3>Web design</h3>
-								<p>Lorem ipsum dolor sitsdw consetsad pscing eliewtr, diam nonumy.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-3 col-md-6">
-						<div class="single-service">
-							<div class="icon color-3">
-								<i class="lni lni-pallet"></i>
-							</div>
-							<div class="content">
-								<h3>Graphics design</h3>
-								<p>Lorem ipsum dolor sitsdw consetsad pscing eliewtr, diam nonumy.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-3 col-md-6">
-						<div class="single-service">
-							<div class="icon color-4">
-								<i class="lni lni-vector"></i>
-							</div>
-							<div class="content">
-								<h3>Brand design</h3>
-								<p>Lorem ipsum dolor sitsdw consetsad pscing eliewtr, diam nonumy.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="view-all-btn text-center pt-30">
-					<a href="javascript:void(0)" class="main-btn btn-hover">View All Services</a>
-				</div>
-
-			</div>
-		</section>
-		<!-- ========================= service-section end ========================= -->
 
 		<!-- ========================= counter-up-section start ========================= -->
 		<section class="counter-up-section pt-150">
@@ -372,7 +344,7 @@
 						<div class="col-xl-3 col-md-6">
 							<div class="footer-widget">
 								<div class="logo mb-35">
-									<a href="index.html"> <img src="assets/img/logo/logo.svg" alt=""> </a>
+									<!-- <a href="index.html"> <img src="assets/img/logo/logo.svg" alt=""> </a> -->
 								</div>
 								<p class="desc mb-35">We are expert designer team, There have a lot of designer and developer If you have any project you can hire Create a website.</p>
 								<ul class="socials">
@@ -440,11 +412,6 @@
 
 					</div>
 				</div>
-
-				<div class="copy-right">
-					<p>Design and Developed by <a href="https://uideck.com" rel="nofollow" target="_blank"> UIdeck </a>. Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a></p>
-				</div>
-
 			</div>
 		</footer>
     <!-- ========================= footer end ========================= -->

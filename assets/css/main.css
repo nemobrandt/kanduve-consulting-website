@@ -162,20 +162,23 @@ p {
   white-space: nowrap;
   vertical-align: middle;
   user-select: none;
-  padding: 20px 40px;
-  font-size: 18px;
-  border-radius: 50px;
-  color: #fff;
+  padding: 18px 38px;
+  font-size: 16px;
+
+  border-radius: 12px; /* less pill, more structured */
+
+  color: #ffffff;
   cursor: pointer;
-  z-index: 5;
-  transition: all .4s ease-in-out;
-  border: none;
-  background: #4E6EF1;
-  overflow: hidden;
+  transition: all .3s ease;
+
+  background-color: #153548; /* strongest brand colour */
+  border: 1px solid #153548;
 }
 
 .main-btn:hover {
-  color: #fff;
+  background-color: #3a6278;
+  border-color: #3a6278;
+  transform: translateY(-2px);
 }
 
 .main-btn.border-btn {
@@ -211,7 +214,7 @@ p {
 .scroll-top {
   width: 45px;
   height: 45px;
-  background: #4E6EF1;
+  background: #3a6278;
   display: none;
   justify-content: center;
   align-items: center;
@@ -317,7 +320,7 @@ p {
   height: 100%;
   border-style: solid;
   /* Spinner Color */
-  border-color: #4E6EF1 #4E6EF1 #ddd;
+  border-color: #3a6278 #3a6278 #ddd;
   border-radius: 50%;
   border-width: 6px;
 }
@@ -406,6 +409,11 @@ p {
   width: 100%;
   z-index: 99;
   transition: all 0.3s ease-out 0s;
+}
+
+.navbar-logo {
+  height: 200;
+  width: auto;
 }
 
 .sticky {
@@ -537,16 +545,16 @@ p {
   right: 0;
   left: auto;
   width: 0;
-  height: 2px;
-  background: #4E6EF1;
+  height: 3px;
+  background: #668b9b;
   z-index: -1;
   opacity: 0;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   transition: all 0.3s ease-out 0s;
 }
 
 .navbar-nav .nav-item a:hover, .navbar-nav .nav-item a.active {
-  color: #4E6EF1;
+  color: #3a6278;
 }
 
 .navbar-nav .nav-item a:hover::before, .navbar-nav .nav-item a.active::before {
@@ -670,12 +678,14 @@ p {
 /* ============== hero-area ============ */
 .hero-section {
   position: relative;
-  z-index: 1;
   padding: 160px 0 120px;
-  background-image: url("../img/hero/hero-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: left bottom;
+
+  background:
+    linear-gradient(rgba(255,255,255,0.79), rgba(255,255,255,0.79)),
+    url("../img/hero/hero-bg.jpg");
+
   background-size: cover;
+  background-position: center;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -705,7 +715,7 @@ p {
 .hero-section .hero-content span {
   font-family: "Archivo Black", sans-serif;
   font-size: 30px;
-  color: #4E6EF1;
+  color: #3a6278;
   margin-bottom: 20px;
 }
 
@@ -864,15 +874,29 @@ p {
 
 /* ============== service css ==============*/
 .service-section {
-  background-image: url("../img/service/service-bg.jpg");
+  background: #eef3f6;
+  background-image: none;
 }
 
 .service-section .single-service {
-  text-align: center;
+  background: rgb(255, 255, 255);
+  border-radius: 18px; /* optional, keep your own if you want */
   padding: 50px 30px;
-  border-radius: 10px;
-  background: #fff;
-  margin-bottom: 30px;
+
+  box-shadow:
+    rgba(0, 0, 0, 0.40) 0px 2px 4px,
+    rgba(0, 0, 0, 0.30) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.20) 0px -3px 0px inset;
+
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.service-section .single-service:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    rgba(0, 0, 0, 0.45) 0px 8px 18px,
+    rgba(0, 0, 0, 0.30) 0px 18px 30px -10px,
+    rgba(0, 0, 0, 0.20) 0px -3px 0px inset;
 }
 
 .service-section .single-service:hover .icon {
@@ -928,6 +952,7 @@ p {
 .service-section .single-service .content h3 {
   font-size: 24px;
   margin-bottom: 15px;
+  color: #313450;
 }
 
 /* ============= counter-up css =========== */
