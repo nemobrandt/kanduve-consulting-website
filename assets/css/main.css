@@ -408,6 +408,11 @@ p {
   transition: all 0.3s ease-out 0s;
 }
 
+.navbar-logo {
+  height: 200;
+  width: auto;
+}
+
 .sticky {
   position: fixed;
   z-index: 99;
