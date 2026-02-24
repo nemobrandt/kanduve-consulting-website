@@ -162,20 +162,23 @@ p {
   white-space: nowrap;
   vertical-align: middle;
   user-select: none;
-  padding: 20px 40px;
-  font-size: 18px;
-  border-radius: 50px;
-  color: #fff;
+  padding: 18px 38px;
+  font-size: 16px;
+
+  border-radius: 12px; /* less pill, more structured */
+
+  color: #ffffff;
   cursor: pointer;
-  z-index: 5;
-  transition: all .4s ease-in-out;
-  border: none;
-  background: #3a6278;
-  overflow: hidden;
+  transition: all .3s ease;
+
+  background-color: #153548; /* strongest brand colour */
+  border: 1px solid #153548;
 }
 
 .main-btn:hover {
-  color: #fff;
+  background-color: #3a6278;
+  border-color: #3a6278;
+  transform: translateY(-2px);
 }
 
 .main-btn.border-btn {
@@ -211,7 +214,7 @@ p {
 .scroll-top {
   width: 45px;
   height: 45px;
-  background: #4E6EF1;
+  background: #3a6278;
   display: none;
   justify-content: center;
   align-items: center;
@@ -871,15 +874,24 @@ p {
 
 /* ============== service css ==============*/
 .service-section {
-  background-image: url("../img/service/service-bg.jpg");
+  background: #eef3f6;; /* or #f6f7fb */
+  background-image: none; /* turn off photo bg for this style */
 }
 
 .service-section .single-service {
-  text-align: center;
+  background: #ffffff;
   padding: 50px 30px;
-  border-radius: 10px;
-  background: #fff;
-  margin-bottom: 30px;
+  border-radius: 44px;
+  background: linear-gradient(225deg, #ffffff, #ffffff);
+  box-shadow:  -15px 15px 30px #666666,
+             15px -15px 30px #ffffff;
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.service-section .single-service:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 28px 60px rgba(21, 53, 72, 0.15);
 }
 
 .service-section .single-service:hover .icon {
@@ -935,6 +947,7 @@ p {
 .service-section .single-service .content h3 {
   font-size: 24px;
   margin-bottom: 15px;
+  color: #313450;
 }
 
 /* ============= counter-up css =========== */
