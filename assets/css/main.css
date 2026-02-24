@@ -679,9 +679,9 @@ p {
 .hero-section {
   position: relative;
   padding: 160px 0 120px;
-
+  border-bottom: 4px solid rgba(21, 53, 72, 0.08);
   background:
-    linear-gradient(rgba(255,255,255,0.79), rgba(255,255,255,0.79)),
+    linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.72)),
     url("../img/hero/hero-bg.jpg");
 
   background-size: cover;
@@ -899,7 +899,7 @@ p {
     rgba(0, 0, 0, 0.20) 0px -3px 0px inset;
 }
 
-.service-section .single-service:hover .icon {
+/* .service-section .single-service:hover .icon {
   color: #fff;
 }
 
@@ -917,7 +917,7 @@ p {
 
 .service-section .single-service:hover .icon.color-4 {
   background: #5A37FF;
-}
+} */
 
 .service-section .single-service .icon {
   width: 95px;
