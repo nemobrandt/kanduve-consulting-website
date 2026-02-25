@@ -852,7 +852,12 @@ p {
   margin-bottom: 20px;
   border-radius: 10px;
   background: #fff;
-  box-shadow: 0px 0px 35px #f2f4f9;
+  border-radius: 5px; /* optional, keep your own if you want */
+  /* padding: 50px 30px; */
+    box-shadow:
+    rgba(0, 0, 0, 0.40) 0px 2px 4px,
+    rgba(0, 0, 0, 0.30) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.20) 0px -3px 0px inset;
 }
 
 .about-section .accordion .single-faq button {
