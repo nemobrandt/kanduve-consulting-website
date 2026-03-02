@@ -684,7 +684,7 @@ p {
   border-bottom: 4px solid rgba(21, 53, 72, 0.08);
   background:
   linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.72)),
-  url("/assets/img/hero/hero-bg.jpg");
+  url("../img/hero/hero-bg.jpg");
 
   padding: 0;
   min-height: 100vh;
@@ -694,14 +694,6 @@ p {
   background-size: cover;
   background-position: center;
 }
-
-.hero-section.subpages {
-  min-height: 20vh;        /* much shorter than the full homepage hero */
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.5)),
-    url("/assets/img/hero/hero-geometric.jpg");  /* darker overlay = different feel */
-    border-bottom: none;
-  }
 
 .hero-section .container {
   padding-top: 160px;
