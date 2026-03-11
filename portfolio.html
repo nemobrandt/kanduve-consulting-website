@@ -20,9 +20,21 @@
     <link rel="stylesheet" href="assets/css/main.css" />
 
     <style>
-        #about {
-            background: #F2F4F9;
+        #about.main {
+            /* background: #F2F4F9; */
+            /* margin-bottom: 50px; */
+              background:
+            linear-gradient(rgba(255,255,255,0.94), rgba(255,255,255,0.94)),
+             url("assets/img/hero/hero-bg.jpg");
+        }
+
+        #about.secondary {
+            background: #FFFF;
             margin-bottom: 50px;
+        }
+
+        h1 {
+            color: #153548;
         }
     </style> 
 </head>
@@ -91,7 +103,7 @@
     <!-- ========================= header end ========================= -->
 <div class="wow fadeInUp" data-wow-delay=".4s">
     <!-- ========================= portfolio-section start ========================= -->
-    <section id="about" class="about-section pt-150">
+    <section id="about" class="about-section pt-150 main">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
