@@ -1,1 +1,353 @@
-Contact (Contact Information, Contact Form)
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Contact | Kanduve Consulting</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="favicon.ico?v=1" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=1">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?v=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=1">
+
+    <link rel="stylesheet" href="assets/css/bootstrap-5.0.0-beta2.min.css" />
+    <link rel="stylesheet" href="assets/css/LineIcons.2.0.css" />
+    <link rel="stylesheet" href="assets/css/tiny-slider.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        #contact {
+            flex: 1;
+            background:
+                linear-gradient(rgba(255,255,255,0.94), rgba(255,255,255,0.94)),
+                url("assets/img/hero/hero-bg.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        h1 { color: #153548; }
+
+        /* ---- Contact details ---- */
+        .contact-detail {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 28px;
+        }
+
+        .contact-detail .icon {
+            width: 46px;
+            height: 46px;
+            border-radius: 10px;
+            background: #f0f5f8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 20px;
+            color: #153548;
+        }
+
+        .contact-detail .info h5 {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: #999;
+            margin: 0 0 4px;
+            font-weight: 600;
+        }
+
+        .contact-detail .info a,
+        .contact-detail .info p {
+            color: #153548;
+            font-weight: 500;
+            margin: 0;
+            font-size: 0.95rem;
+            text-decoration: none;
+        }
+
+        .contact-detail .info a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-socials {
+            display: flex;
+            gap: 12px;
+            margin-top: 36px;
+        }
+
+        .contact-socials a {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            background: #f0f5f8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #153548;
+            font-size: 18px;
+            transition: background 0.2s, color 0.2s;
+            text-decoration: none;
+        }
+
+        .contact-socials a:hover {
+            background: #153548;
+            color: #fff;
+        }
+
+        /* ---- Contact form ---- */
+        .contact-form-wrapper {
+            background: #fff;
+            border-radius: 14px;
+            padding: 40px;
+            box-shadow: 0 4px 24px rgba(21, 53, 72, 0.08);
+        }
+
+        .contact-form-wrapper .form-label {
+            font-size: 0.82rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #153548;
+            margin-bottom: 6px;
+        }
+
+        .contact-form-wrapper .form-control {
+            border: 1.5px solid #e0e6eb;
+            border-radius: 8px;
+            padding: 10px 14px;
+            font-size: 0.93rem;
+            color: #153548;
+            transition: border-color 0.2s;
+        }
+
+        .contact-form-wrapper .form-control:focus {
+            border-color: #153548;
+            box-shadow: none;
+        }
+
+        .contact-form-wrapper textarea.form-control {
+            resize: none;
+        }
+
+        .contact-form-wrapper .main-btn {
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .form-note {
+            font-size: 0.78rem;
+            color: #aaa;
+            margin-top: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="loader">
+            <div class="spinner">
+                <div class="spinner-container">
+                    <div class="spinner-rotator">
+                        <div class="spinner-left">
+                            <div class="spinner-circle"></div>
+                        </div>
+                        <div class="spinner-right">
+                            <div class="spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================= header start ========================= -->
+    <header class="header">
+        <div class="navbar-area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="assets/img/logo/logo.svg" class="navbar-logo" alt="Logo" />
+                            </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ms-auto">
+                                    <li class="nav-item"><a href="index.html">Home</a></li>
+                                    <li class="nav-item"><a href="services.html">Services</a></li>
+                                    <li class="nav-item"><a href="about.html">About</a></li>
+                                    <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
+                                    <li class="nav-item"><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ========================= header end ========================= -->
+
+    <!-- ========================= contact section start ========================= -->
+    <section id="contact" class="pt-150 pb-100">
+        <div class="container">
+
+            <!-- Page title -->
+            <div class="row justify-content-center mb-60">
+                <div class="col-lg-6 text-center wow fadeInUp" data-wow-delay=".2s">
+                    <h1 class="mb-15">Get in Touch</h1>
+                    <p>Have a project in mind or want to explore how we can help? We'd love to hear from you.</p>
+                </div>
+            </div>
+
+            <div class="row g-5 align-items-start">
+
+                <!-- Left: contact form -->
+                <div class="col-lg-7 wow fadeInUp" data-wow-delay=".3s">
+                    <div class="contact-form-wrapper">
+                        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                    <label class="form-label">Name</label>
+                                    <input type="text" name="name" class="form-control" placeholder="Your name" required />
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="form-label">Email</label>
+                                    <input type="email" name="email" class="form-control" placeholder="your@email.com" required />
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label">Subject</label>
+                                    <input type="text" name="subject" class="form-control" placeholder="How can we help?" />
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label">Message</label>
+                                    <textarea name="message" class="form-control" rows="6" placeholder="Tell us about your project..." required></textarea>
+                                </div>
+                                <div class="col-12 mt-2">
+                                    <button type="submit" class="main-btn btn-hover">Send Message</button>
+                                    <p class="form-note">Powered by Formspree — replace YOUR_FORM_ID in the form action with your own.</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Right: contact details -->
+                <div class="col-lg-5 wow fadeInUp" data-wow-delay=".4s">
+
+                    <div class="contact-detail">
+                        <div class="icon"><i class="lni lni-envelope"></i></div>
+                        <div class="info">
+                            <h5>Email</h5>
+                            <a href="mailto:amey@kanduve.com">amey@kanduve.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail">
+                        <div class="icon"><i class="lni lni-phone"></i></div>
+                        <div class="info">
+                            <h5>Phone</h5>
+                            <a href="tel:+00000000000">+__ __ ___ ____</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-socials">
+                        <a href="javascript:void(0)" title="LinkedIn"><i class="lni lni-linkedin-original"></i></a>
+                        <a href="javascript:void(0)" title="Twitter"><i class="lni lni-twitter-filled"></i></a>
+                        <a href="javascript:void(0)" title="Facebook"><i class="lni lni-facebook-filled"></i></a>
+                        <a href="javascript:void(0)" title="Instagram"><i class="lni lni-instagram-filled"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ========================= contact section end ========================= -->
+
+    <!-- ========================= footer start ========================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="widget-wrapper">
+                <div class="row">
+                    <div class="col-xl-3 col-md-6">
+                        <div class="footer-widget">
+                            <div class="logo mb-35"></div>
+                            <p class="desc mb-35">Filler paragraph</p>
+                            <ul class="socials">
+                                <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-twitter-filled"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-instagram-filled"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 offset-xl-1 col-md-5 offset-md-1 col-sm-6">
+                        <div class="footer-widget">
+                            <h3>Links</h3>
+                            <ul class="links">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="portfolio.html">Portfolio</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-6">
+                        <div class="footer-widget">
+                            <h3>Services</h3>
+                            <ul class="links">
+                                <li><a href="services.html">Digital Transformation</a></li>
+                                <li><a href="services.html">Custom Software</a></li>
+                                <li><a href="services.html">Data &amp; Analytics</a></li>
+                                <li><a href="services.html">Strategy &amp; Advisory</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="footer-widget">
+                            <h3>Contact</h3>
+                            <ul>
+                                <li><a href="contact.html">Contact Page</a></li>
+                                <li>+____</li>
+                                <li>amey@kanduve.com</li>
+                                <li>South Africa</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ========================= footer end ========================= -->
+
+    <a href="#" class="scroll-top btn-hover">
+        <i class="lni lni-chevron-up"></i>
+    </a>
+
+    <script src="assets/js/bootstrap-5.0.0-beta2.min.js"></script>
+    <script src="assets/js/count-up.min.js"></script>
+    <script src="assets/js/tiny-slider.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/polifill.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
