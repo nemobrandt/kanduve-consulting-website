@@ -20,12 +20,24 @@
     <link rel="stylesheet" href="assets/css/main.css" />
 
     <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        #about {
+            flex: 1;
+        }
+
         #about.main {
             /* background: #F2F4F9; */
             /* margin-bottom: 50px; */
-              background:
-            linear-gradient(rgba(255,255,255,0.94), rgba(255,255,255,0.94)),
-             url("assets/img/hero/hero-bg.jpg");
+            background:
+                linear-gradient(rgba(255,255,255,0.94), rgba(255,255,255,0.94)),
+                url("assets/img/hero/hero-bg.jpg");
+            background-size: cover;
+            background-position: center;
         }
 
         #about.secondary {
@@ -101,7 +113,6 @@
         </div>
     </header>
     <!-- ========================= header end ========================= -->
-<div class="wow fadeInUp" data-wow-delay=".4s">
     <!-- ========================= portfolio-section start ========================= -->
     <section id="about" class="about-section pt-150 main">
         <div class="container">
@@ -159,9 +170,6 @@
         </div>
     </section>
     <!-- ========================= portfolio-section end ========================= -->
-
-
-</div>
     <!-- ========================= footer start ========================= -->
     <footer class="footer">
         <div class="container">
