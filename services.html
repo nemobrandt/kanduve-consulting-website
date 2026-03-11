@@ -106,6 +106,10 @@
         .single-service.open .expand-toggle i {
             transform: rotate(180deg);
         }
+
+        .row.g-4 {
+            align-items: start;
+        }
     </style>
 </head>
 
@@ -353,10 +357,19 @@
     <script>
         function toggleCard(id, btn) {
             const card = document.getElementById(id);
+            const body = card.querySelector('.service-expand-body');
+            const divider = card.querySelector('.service-expand-divider');
             const isOpen = card.classList.toggle('open');
-            btn.innerHTML = isOpen
-                ? 'Show less <i class="lni lni-chevron-down"></i>'
-                : 'Learn more <i class="lni lni-chevron-down"></i>';
+
+            if (isOpen) {
+                body.style.maxHeight = body.scrollHeight + 'px';
+                divider.style.opacity = '1';
+                btn.innerHTML = 'Show less <i class="lni lni-chevron-down"></i>';
+            } else {
+                body.style.maxHeight = '0';
+                divider.style.opacity = '0';
+                btn.innerHTML = 'Learn more <i class="lni lni-chevron-down"></i>';
+            }
         }
     </script>
 </body>
