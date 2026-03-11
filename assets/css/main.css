@@ -18,6 +18,12 @@ html {
   scroll-behavior: smooth;
 }
 
+.page-title {
+  /* background: #F2F4F9; */
+  padding-top: 120px;
+  padding-bottom: 50px;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-weight: normal;
