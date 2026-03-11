@@ -1,1 +1,364 @@
-Services
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Services | Kanduve Consulting</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="favicon.ico?v=1" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=1">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?v=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=1">
+
+    <link rel="stylesheet" href="assets/css/bootstrap-5.0.0-beta2.min.css" />
+    <link rel="stylesheet" href="assets/css/LineIcons.2.0.css" />
+    <link rel="stylesheet" href="assets/css/tiny-slider.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <style>
+        /* Same hero background treatment as about/portfolio */
+        #service {
+            background:
+                linear-gradient(rgba(255,255,255,0.94), rgba(255,255,255,0.94)),
+                url("assets/img/hero/hero-bg.jpg");
+            background-size: cover;
+            background-size: cover;
+            background-position: center;
+            flex: 1;
+        }
+
+               /* Push footer to bottom on tall viewports */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        h1 { color: #153548; }
+
+        /* Expand panel — hidden by default */
+        .service-expand-body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.45s ease;
+        }
+
+        .single-service.open .service-expand-body {
+            max-height: 400px;
+        }
+
+        .service-expand-body p {
+            font-size: 0.88rem;
+            color: #666;
+            line-height: 1.7;
+            margin: 10px 0 6px;
+        }
+
+        .service-expand-body ul {
+            padding-left: 16px;
+            margin: 0;
+            color: #666;
+            font-size: 0.88rem;
+            line-height: 1.9;
+        }
+
+        /* Divider that fades in when open */
+        .service-expand-divider {
+            height: 1px;
+            background: #dde3e8;
+            margin: 12px 0 0;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .single-service.open .service-expand-divider {
+            opacity: 1;
+        }
+
+        /* "Learn more" toggle button */
+        .expand-toggle {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            margin-top: 10px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #153548;
+            cursor: pointer;
+            border: none;
+            background: none;
+            padding: 0;
+            letter-spacing: 0.02em;
+            opacity: 0.6;
+            transition: opacity 0.2s;
+        }
+
+        .expand-toggle:hover { opacity: 1; }
+
+        .expand-toggle i {
+            font-size: 12px;
+            transition: transform 0.35s ease;
+        }
+
+        .single-service.open .expand-toggle i {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="loader">
+            <div class="spinner">
+                <div class="spinner-container">
+                    <div class="spinner-rotator">
+                        <div class="spinner-left">
+                            <div class="spinner-circle"></div>
+                        </div>
+                        <div class="spinner-right">
+                            <div class="spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================= header start ========================= -->
+    <header class="header">
+        <div class="navbar-area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="assets/img/logo/logo.svg" class="navbar-logo" alt="Logo" />
+                            </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ms-auto">
+                                    <li class="nav-item"><a href="index.html">Home</a></li>
+                                    <li class="nav-item"><a href="services.html">Services</a></li>
+                                    <li class="nav-item"><a href="about.html">About</a></li>
+                                    <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
+                                    <li class="nav-item"><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ========================= header end ========================= -->
+
+    <!-- ========================= service-section start ========================= -->
+    <section id="service" class="service-section pt-150 pb-100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xxl-5 col-xl-6 col-lg-7 col-md-10">
+                    <div class="section-title text-center mb-50">
+                        <h1>Our Services</h1>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt labore.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Digital Transformation -->
+                <div class="col-xl-3 col-md-6">
+                    <div class="single-service" id="card-1">
+                        <div class="icon color">
+                            <i class="lni lni-layers"></i>
+                        </div>
+                        <div class="content">
+                            <h3>Digital Transformation</h3>
+                            <p>Culture, products, channels.</p>
+                            <div class="service-expand-divider"></div>
+                            <div class="service-expand-body">
+                                <p>We help organisations embrace digital change across their culture, products, and channels — turning disruption into a competitive advantage.</p>
+                                <ul>
+                                    <li>Digital strategy &amp; roadmapping</li>
+                                    <li>Operating model redesign</li>
+                                    <li>Technology adoption &amp; change management</li>
+                                    <li>Customer experience modernisation</li>
+                                </ul>
+                            </div>
+                            <button class="expand-toggle" onclick="toggleCard('card-1', this)">
+                                Learn more <i class="lni lni-chevron-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Custom Software -->
+                <div class="col-xl-3 col-md-6">
+                    <div class="single-service" id="card-2">
+                        <div class="icon">
+                            <i class="lni lni-code-alt"></i>
+                        </div>
+                        <div class="content">
+                            <h3>Custom Software</h3>
+                            <p>Enterprise applications, digital platforms, mobile apps.</p>
+                            <div class="service-expand-divider"></div>
+                            <div class="service-expand-body">
+                                <p>We design and build purpose-built software solutions tailored to your workflows, removing the compromises of off-the-shelf tools.</p>
+                                <ul>
+                                    <li>Web &amp; mobile application development</li>
+                                    <li>API design &amp; systems integration</li>
+                                    <li>Legacy system modernisation</li>
+                                    <li>Ongoing support &amp; maintenance</li>
+                                </ul>
+                            </div>
+                            <button class="expand-toggle" onclick="toggleCard('card-2', this)">
+                                Learn more <i class="lni lni-chevron-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data & Analytics -->
+                <div class="col-xl-3 col-md-6">
+                    <div class="single-service" id="card-3">
+                        <div class="icon">
+                            <i class="lni lni-bar-chart"></i>
+                        </div>
+                        <div class="content">
+                            <h3>Data &amp; Analytics</h3>
+                            <p>Business intelligence, data science, data engineering.</p>
+                            <div class="service-expand-divider"></div>
+                            <div class="service-expand-body">
+                                <p>We turn raw data into actionable intelligence — building the pipelines, dashboards, and models your team needs to make confident decisions.</p>
+                                <ul>
+                                    <li>Data architecture &amp; warehousing</li>
+                                    <li>Business intelligence &amp; dashboards</li>
+                                    <li>Machine learning &amp; predictive analytics</li>
+                                    <li>Data governance &amp; quality frameworks</li>
+                                </ul>
+                            </div>
+                            <button class="expand-toggle" onclick="toggleCard('card-3', this)">
+                                Learn more <i class="lni lni-chevron-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strategy & Advisory -->
+                <div class="col-xl-3 col-md-6">
+                    <div class="single-service" id="card-4">
+                        <div class="icon">
+                            <i class="lni lni-vector"></i>
+                        </div>
+                        <div class="content">
+                            <h3>Strategy &amp; Advisory</h3>
+                            <p>Technology strategy, advisory, and fractional leadership.</p>
+                            <div class="service-expand-divider"></div>
+                            <div class="service-expand-body">
+                                <p>We work alongside leadership teams to sharpen strategy, evaluate technology investments, and translate ambition into executable plans.</p>
+                                <ul>
+                                    <li>Technology due diligence</li>
+                                    <li>Organisational capability assessments</li>
+                                    <li>Vendor selection &amp; procurement support</li>
+                                    <li>Executive advisory &amp; fractional CTO</li>
+                                </ul>
+                            </div>
+                            <button class="expand-toggle" onclick="toggleCard('card-4', this)">
+                                Learn more <i class="lni lni-chevron-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ========================= service-section end ========================= -->
+
+    <!-- ========================= footer start ========================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="widget-wrapper">
+                <div class="row">
+                    <div class="col-xl-3 col-md-6">
+                        <div class="footer-widget">
+                            <div class="logo mb-35"></div>
+                            <p class="desc mb-35">Filler paragraph</p>
+                            <ul class="socials">
+                                <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-twitter-filled"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-instagram-filled"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 offset-xl-1 col-md-5 offset-md-1 col-sm-6">
+                        <div class="footer-widget">
+                            <h3>Links</h3>
+                            <ul class="links">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="portfolio.html">Portfolio</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-6">
+                        <div class="footer-widget">
+                            <h3>Services</h3>
+                            <ul class="links">
+                                <li><a href="services.html">Digital Transformation</a></li>
+                                <li><a href="services.html">Custom Software</a></li>
+                                <li><a href="services.html">Data &amp; Analytics</a></li>
+                                <li><a href="services.html">Strategy &amp; Advisory</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="footer-widget">
+                            <h3>Contact</h3>
+                            <ul>
+                                <li><a href="contact.html">Contact Page</a></li>
+                                <li>+____</li>
+                                <li><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="10717d7569507b717e746566753e737f7d">[email&#160;protected]</a></li>
+                                <li>South Africa</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ========================= footer end ========================= -->
+
+    <a href="#" class="scroll-top btn-hover">
+        <i class="lni lni-chevron-up"></i>
+    </a>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/bootstrap-5.0.0-beta2.min.js"></script>
+    <script src="assets/js/count-up.min.js"></script>
+    <script src="assets/js/tiny-slider.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/polifill.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        function toggleCard(id, btn) {
+            const card = document.getElementById(id);
+            const isOpen = card.classList.toggle('open');
+            btn.innerHTML = isOpen
+                ? 'Show less <i class="lni lni-chevron-down"></i>'
+                : 'Learn more <i class="lni lni-chevron-down"></i>';
+        }
+    </script>
+</body>
+
+</html>
